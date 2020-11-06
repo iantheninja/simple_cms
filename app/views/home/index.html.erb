@@ -1,0 +1,8 @@
+<h1><%= @layout_content %></h1>
+
+<a href='/home/hello'>link 1</a>
+<br/>
+<!-- <%= link_to "Link 2", home_hello_path %> -->
+<%= link_to "Link 2", action: 'hello'%>
+<br/>
+<%= link_to "Link 3", action: 'hello', page: 5, id: 10 %>
