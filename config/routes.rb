@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  
   root to: 'home#index'
   get 'home/index'
   # default route
@@ -11,13 +10,13 @@ Rails.application.routes.draw do
 
   resources :subjects do
     member do
-      :delete
+      get :delete
     end
   end
 
   resources :pages do
     member do
-      :delete
+      get :delete
     end
   end
 end
