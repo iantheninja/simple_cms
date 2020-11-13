@@ -1,14 +1,15 @@
 class PagesController < ApplicationController
   def index
-  end
-
-  def show
+    @pages = Page.order('position ASC')
   end
 
   def new
   end
   
   def create
+  end
+
+  def show
   end
   
   def update
