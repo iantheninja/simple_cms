@@ -9,6 +9,7 @@ class SubjectsController < ApplicationController
 
   def new
     @subject = Subject.new
+    @subject.pages.build
   end
 
   def create
@@ -48,6 +49,6 @@ class SubjectsController < ApplicationController
   private
 
   def subject_params
-    params.require(:subject).permit(:name, :position, :visible)
+    params.require(:subject).permit(:name, :position, :visible, pages_attributes: %i[id name permalink position visible content])
   end
 end

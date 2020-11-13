@@ -3,13 +3,8 @@ class PagesController < ApplicationController
     @pages = Page.order('position ASC')
   end
 
-  def new
-  end
-  
-  def create
-  end
-
   def show
+    @page = Page.find(params[:id])
   end
   
   def update

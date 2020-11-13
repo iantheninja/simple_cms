@@ -2,13 +2,37 @@
   <h2>Create New Subject</h2>
   <%= link_to "Subjects list", subjects_path, class: 'back link' %>
 
-  <%= form_for @subject, url: subjects_path, method: 'post' do |f| %>
+  <%= form_with(model: @subject, local: true) do |f| %>
     
     <%= render partial: 'form', locals: {f: f} %>
 
-    <div class="form-buttons">
+    <h3>Add Pages</h3>
+
+    <%= f.fields_for :pages do |s| %>
+      <%= s.label :name %>
+      <br/>
+      <%= s.text_field :name %>
+      <br/>
+      <%= s.label :permalink %>
+      <br/>
+      <%= s.text_field :permalink %>
+      <br/>
+      <%= s.label :position %>
+      <br/>
+      <%= s.number_field :position %>
+      <br/>
+      <%= s.label :visible %>
+      <br/>
+      <%= s.text_field :visible %>
+      <br/>
+      <%= s.label :content %>
+      <br/>
+      <%= s.text_field :content %>
+    <% end %>
+
+    <p class="form-buttons">
       <%= f.submit "Create Subject" %>
-    </div>
+    </p>
   <% end %>
   
 </div>
