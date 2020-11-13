@@ -21,7 +21,7 @@
       <td class="center"><%= page.visible ? 'Yes' : 'No' %></td>
       <td class="actions">
         <%= link_to 'Show', page_path(page) %>
-        <%= link_to 'Edit', '#' %>
+        <%= link_to 'Edit', edit_page_path(page) %>
         <%= link_to 'Delete', '#', data: {confirm: 'Are you sure?'} %>
       </td>
     </tr>

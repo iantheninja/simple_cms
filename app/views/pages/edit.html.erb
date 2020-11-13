@@ -1,2 +1,25 @@
-<h1>Pages#edit</h1>
-<p>Find me in app/views/pages/edit.html.erb</p>
+<%= form_with model: @page do |s| %>
+  <%= s.label :name %>
+  <br/>
+  <%= s.text_field :name %>
+  <br/>
+  <%= s.label :permalink %>
+  <br/>
+  <%= s.text_field :permalink %>
+  <br/>
+  <%= s.label :position %>
+  <br/>
+  <%= s.number_field :position %>
+  <br/>
+  <%= s.label :visible %>
+  <br/>
+  <%= s.text_field :visible %>
+  <br/>
+  <%= s.label :content %>
+  <br/>
+  <%= s.text_field :content %>
+
+   <p class="form-buttons">
+      <%= s.submit "Update Page" %>
+    </p>
+<% end %>
