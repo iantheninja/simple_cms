@@ -22,7 +22,7 @@
       <td class="actions">
         <%= link_to 'Show', page_path(page) %>
         <%= link_to 'Edit', edit_page_path(page) %>
-        <%= link_to 'Delete', '#', data: {confirm: 'Are you sure?'} %>
+        <%= link_to 'Delete', delete_page_path(page) %>
       </td>
     </tr>
     <% end %>
