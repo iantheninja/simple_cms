@@ -1,24 +1,20 @@
-# README
+# simple cms
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Implemented in Ruby on Rails and contains a demo of some of the new features in rails 6.0
 
-Things you may want to cover:
+## Installation
 
-* Ruby version
+- `git clone`
+- `bundle`
+- `rails db:create`
+- `rails db:migrate`
+- `rails s`
+- open lcoaly on port 3000
 
-* System dependencies
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-* Configuration
+Please make sure to update tests as appropriate.
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
