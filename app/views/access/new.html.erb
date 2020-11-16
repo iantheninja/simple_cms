@@ -1,0 +1,22 @@
+<div class="access new">
+  <h2>Welcome</h2>
+  <p>A simulated login form</p>
+
+  <%= form_tag(access_index_path) do %>  
+    <table summary="login info">
+      <tr>
+        <th><%= label_tag :username %></th>
+        <td><%= text_field_tag :username, params[:username] %></td>
+      </tr>
+      <tr>
+        <th><%= label_tag :password %></th>
+        <td><%= text_field_tag :password %></td>
+      </tr>
+    </table>
+
+    <div class="form-buttons">
+      <%= submit_tag "Log in" %>
+    </div>
+  <% end %>
+  
+</div>

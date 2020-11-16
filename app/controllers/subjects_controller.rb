@@ -1,4 +1,6 @@
 class SubjectsController < ApplicationController
+  before_action :confirm_logged_in?
+  
   def index
     @subjects = Subject.order('position ASC')
   end
