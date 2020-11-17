@@ -1,4 +1,4 @@
-//= require rails_ujs
-//= require activestorage
-//= require turbolinks
+//= require_rails-ujs
+//= require_activestorage
+//= require_turbolinks
 //= require_tree .
